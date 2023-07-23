@@ -1,5 +1,11 @@
 #include<iostream>
 using namespace std;
+#define EASY_SIZE 10;
+#define MEDIUM_SIZE 12;
+#define HARD_SIZE 15;
+#define EASY_MINES 15;
+#define MEDIUM_MINES 20;
+#define HARD_MINES 30;
 
 enum cellType{
 safe,
@@ -11,6 +17,16 @@ locked,
 flagged,
 unlocked
 };
+
+int charToInt(char ch){
+    int x = (int(ch) - 48);
+    return x;
+}
+
+char intToChar(int x) {
+    char ch = '0' + static_cast<char>(x);
+    return ch;
+}
 
 class Cell{
     private: 
@@ -27,22 +43,35 @@ class Cell{
 
     void setAsMine(){
         type = mine;
+        value = '*';
     }
 
     void displayCell(){
-        switch(type){
-            case 0:
-            cout<<value;
+        switch(status){
+            case locked:
+            cout<<"   ";
             break;
 
-            case 1:
-            cout<<'*';
+            case flagged:
+            cout<<" F ";
+            break;
+
+            case unlocked:
+            cout<<" "<< value<<" ";
             break;
         }
     }
 
-    bool isCellLocked(){
-        return status == locked;
+    bool isCellUnlocked(){
+        return status == unlocked;
+    }
+
+    bool checkForZero(){
+        return value == '0';
+    }
+
+    bool isFlagged(){
+        return status == flagged;
     }
 
     bool isMine(){
@@ -58,6 +87,12 @@ class Cell{
 
     void openCell(){
         status = unlocked;
+    }
+
+    void incrementValue(){
+        int x = charToInt(value);
+        x++;
+        value = intToChar(x);
     }
 
 };
