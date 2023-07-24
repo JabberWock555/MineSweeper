@@ -1,4 +1,5 @@
 #include<iostream>
+#include <cstdlib>
 using namespace std;
 #define EASY_SIZE 10;
 #define MEDIUM_SIZE 12;
@@ -24,7 +25,7 @@ int charToInt(char ch){
 }
 
 char intToChar(int x) {
-    char ch = '0' + static_cast<char>(x);
+    char ch = 0 + static_cast<char>(x);
     return ch;
 }
 
