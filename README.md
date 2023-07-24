@@ -36,13 +36,9 @@ Try your luck and become a Minesweeper master! Enjoy the classic game in this te
 - C++ Compiler
 - Standard C++ Library
 
-## License
-
-This Text-Based Minesweeper game is open-source and distributed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it. Contributions are also welcome!
-
 ## Acknowledgments
 
-This game is inspired by the classic Minesweeper game found on various platforms. Special thanks to the Minesweeper community for their continued support and contributions.
+This game is inspired by the classic Minesweeper game found on various platforms. Special thanks to the OUTSCAL community for their continued support and contributions.
 
 Enjoy the game and happy mine hunting!
 
