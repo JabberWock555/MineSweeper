@@ -2,6 +2,9 @@
 
 Welcome to the Text-Based Minesweeper game, a classic and challenging adventure that tests your logic, deduction, and luck! In this game, your goal is to reveal all the safe tiles on the board while avoiding hidden mines.
 
+![minesweeper-logo](https://github.com/JabberWock555/MineSweeper/assets/97807224/a90ff6da-eedc-4fe3-8f66-56f0f93c3628)
+
+
 ## Instructions
 
 - **Setting Difficulty:** Choose between Easy, Medium, or Hard difficulty levels, each determining the size of the grid and the number of mines hidden on the board.
